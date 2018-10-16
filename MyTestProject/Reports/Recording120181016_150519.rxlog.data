@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="4a011614ff1b970"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="ch143678"
+		rxversion="8.3.0.0"
+		host="UKNML9780"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-GB"
+		dtnlanguage="en-GB"
+		screenresolution="1920x1080"
+		timestamp="16/10/2018 15:05:21"
+		timestampiso="2018-10-16T14:05:21"
+		endtime="16/10/2018 15:06:37"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<errormessage>
+			Failed to find item 'MyTestProjectRepository.Calculator.Close'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.567"
+			timeRelativeToTestModuleStartTime="00:11.569"
+			timeWallClock="15:05:33"
+			time="00:11.567"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer.Start' at 23;25.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@processname='explorer']/?/?/button[@accessiblename='Start']"
+				itempath="?/?/button[@accessiblename='Start']"
+				fullname="MyTestProjectRepository.Explorer.Start"
+				id="a4f4839d092a4995a90014214bf513d9"
+				timeout="60000"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.094"
+			timeRelativeToTestModuleStartTime="00:13.095"
+			timeWallClock="15:05:34"
+			time="00:13.094"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Failed to load the assemblies containing the definition of this control. UI element identification capabilities for this control are limited. Failed assemblies:<br/>C:\Program Files\Conexant\Flow\Flow.exe<br/>Process: 'Flow' (pid 9588)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v8.3/interfaces-connectivity/technology-instrumentation/general-troubleshooting/#DotNetWinForms<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="83"
+				loglvl="Warn"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.066"
+			timeRelativeToTestModuleStartTime="00:14.067"
+			timeWallClock="15:05:35"
+			time="00:14.066"
+			level="Info"
+			category="Mouse"
+			errimg=".\Recordin_8956cc5_844b7ef7_trace.jpg"
+			errthumb=".\Recordin_8956cc5_844b7ef7_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'Start.PMicrosoftWindowsCalculator8wekyb3d8b' at 94;11.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/winapp[@appid='App' and @name='Start']//list[@automationid='AppsList']/container[@name='C']/listitem[@automationid='P~Microsoft.WindowsCalculator_8wekyb3d8bbwe!App']"
+				itempath=".//list[@automationid='AppsList']/container[@name='C']/listitem[@automationid='P~Microsoft.WindowsCalculator_8wekyb3d8bbwe!App']"
+				fullname="MyTestProjectRepository.Start.PMicrosoftWindowsCalculator8wekyb3d8b"
+				id="ac5c66814cfd45d48579c93b21c51455"
+				timeout="60000"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.386"
+			timeRelativeToTestModuleStartTime="00:15.387"
+			timeWallClock="15:05:37"
+			time="00:15.386"
+			level="Info"
+			category="Mouse"
+			errimg=".\Recordin_8956cc5_17023049_trace.jpg"
+			errthumb=".\Recordin_8956cc5_17023049_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'Calculator.Close' at 32;11.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/winapp[@packagename='Microsoft.WindowsCalculator']/?/?/button[@automationid='Close']"
+				itempath="?/?/button[@automationid='Close']"
+				fullname="MyTestProjectRepository.Calculator.Close"
+				id="fcbad68466614453b399f0e6427eae55"
+				timeout="60000"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:15.764"
+			timeRelativeToTestModuleStartTime="01:15.765"
+			timeWallClock="15:06:37"
+			time="01:15.764"
+			level="Error"
+			category="Module"
+			errimg=".\Recordin_8956cc5_cd7c1337_trace.jpg"
+			errthumb=".\Recordin_8956cc5_cd7c1337_trace_thumb.jpg">
+			<message>
+				Failed to find item 'MyTestProjectRepository.Calculator.Close'.<br/>No element found for path '/winapp[@packagename='Microsoft.WindowsCalculator']/?/?/button[@automationid='Close']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at MyTestProject.MyTestProjectRepositoryFolders.CalculatorAppFolder.get_Close() in d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\MyTestProjectRepository.cs:line 285&#13;&#10;   at MyTestProject.Recording1.Ranorex.Core.Testing.ITestModule.Run() in d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs:line 91&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="91"
+				type="repoitem"
+				path="/winapp[@packagename='Microsoft.WindowsCalculator']/?/?/button[@automationid='Close']"
+				itempath="?/?/button[@automationid='Close']"
+				fullname="MyTestProjectRepository.Calculator.Close"
+				id="fcbad68466614453b399f0e6427eae55"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="2">
+			</metainfo>
+		</item>
+	</activity>
+</report>

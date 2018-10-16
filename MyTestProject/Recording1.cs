@@ -79,6 +79,18 @@ namespace MyTestProject
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer.Start' at 23;25.", repo.Explorer.StartInfo, new RecordItemIndex(0));
+            repo.Explorer.Start.Click("23;25");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Start.PMicrosoftWindowsCalculator8wekyb3d8b' at 94;11.", repo.Start.PMicrosoftWindowsCalculator8wekyb3d8bInfo, new RecordItemIndex(1));
+            repo.Start.PMicrosoftWindowsCalculator8wekyb3d8b.Click("94;11");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Calculator.Close' at 32;11.", repo.Calculator.CloseInfo, new RecordItemIndex(2));
+            repo.Calculator.Close.Click("32;11");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

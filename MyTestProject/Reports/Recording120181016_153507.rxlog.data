@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="11f0e3951cdd2f7c"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="ch143678"
+		rxversion="8.3.0.0"
+		host="UKNML9780"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-GB"
+		dtnlanguage="en-GB"
+		screenresolution="1920x1080"
+		timestamp="16/10/2018 15:35:11"
+		timestampiso="2018-10-16T14:35:11"
+		endtime="16/10/2018 15:35:28"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.114"
+			timeRelativeToTestModuleStartTime="00:09.115"
+			timeWallClock="15:35:20"
+			time="00:09.114"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer.Start' at 23;25.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@processname='explorer']/?/?/button[@accessiblename='Start']"
+				itempath="?/?/button[@accessiblename='Start']"
+				fullname="MyTestProjectRepository.Explorer.Start"
+				id="a4f4839d092a4995a90014214bf513d9"
+				timeout="60000"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.111"
+			timeRelativeToTestModuleStartTime="00:13.112"
+			timeWallClock="15:35:24"
+			time="00:13.111"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Failed to load the assemblies containing the definition of this control. UI element identification capabilities for this control are limited. Failed assemblies:<br/>C:\Program Files\Conexant\Flow\Flow.exe<br/>Process: 'Flow' (pid 9588)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v8.3/interfaces-connectivity/technology-instrumentation/general-troubleshooting/#DotNetWinForms<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="83"
+				loglvl="Warn"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.334"
+			timeRelativeToTestModuleStartTime="00:14.335"
+			timeWallClock="15:35:25"
+			time="00:14.334"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Start.PMicrosoftWindowsCalculator8wekyb3d8b' at 94;11.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/winapp[@appid='App' and @name='Start']//list[@automationid='AppsList']/container[@name='C']/listitem[@automationid='P~Microsoft.WindowsCalculator_8wekyb3d8bbwe!App']"
+				itempath=".//list[@automationid='AppsList']/container[@name='C']/listitem[@automationid='P~Microsoft.WindowsCalculator_8wekyb3d8bbwe!App']"
+				fullname="MyTestProjectRepository.Start.PMicrosoftWindowsCalculator8wekyb3d8b"
+				id="ac5c66814cfd45d48579c93b21c51455"
+				timeout="60000"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.716"
+			timeRelativeToTestModuleStartTime="00:15.717"
+			timeWallClock="15:35:27"
+			time="00:15.716"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Calculator.Close' at 32;11.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/winapp[@packagename='Microsoft.WindowsCalculator']/?/?/button[@automationid='Close']"
+				itempath="?/?/button[@automationid='Close']"
+				fullname="MyTestProjectRepository.Calculator.Close"
+				id="fcbad68466614453b399f0e6427eae55"
+				timeout="60000"
+				codefile="d:\Ranorex\RanorexStudio Projects\MyTestProject\MyTestProject\Recording1.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

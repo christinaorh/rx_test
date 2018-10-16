@@ -27,6 +27,9 @@ namespace MyTestProject
     public partial class MyTestProjectRepository : RepoGenBaseFolder
     {
         static MyTestProjectRepository instance = new MyTestProjectRepository();
+        MyTestProjectRepositoryFolders.ExplorerAppFolder _explorer;
+        MyTestProjectRepositoryFolders.StartAppFolder _start;
+        MyTestProjectRepositoryFolders.CalculatorAppFolder _calculator;
 
         /// <summary>
         /// Gets the singleton class instance representing the MyTestProjectRepository element repository.
@@ -43,6 +46,9 @@ namespace MyTestProject
         public MyTestProjectRepository() 
             : base("MyTestProjectRepository", "/", null, 0, false, "b70ce3ed-f36a-4874-a541-fb43fc5b3659", ".\\RepositoryImages\\MyTestProjectRepositoryb70ce3ed.rximgres")
         {
+            _explorer = new MyTestProjectRepositoryFolders.ExplorerAppFolder(this);
+            _start = new MyTestProjectRepositoryFolders.StartAppFolder(this);
+            _calculator = new MyTestProjectRepositoryFolders.CalculatorAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +66,33 @@ namespace MyTestProject
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("e2c284dc-6b05-496b-8c25-cce6c2a2d84d")]
+        public virtual MyTestProjectRepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
+
+        /// <summary>
+        /// The Start folder.
+        /// </summary>
+        [RepositoryFolder("3b8a154e-dc52-409b-99fd-1f6674331d2a")]
+        public virtual MyTestProjectRepositoryFolders.StartAppFolder Start
+        {
+            get { return _start; }
+        }
+
+        /// <summary>
+        /// The Calculator folder.
+        /// </summary>
+        [RepositoryFolder("47b5787b-bcf4-41a7-b189-063a0c84f939")]
+        public virtual MyTestProjectRepositoryFolders.CalculatorAppFolder Calculator
+        {
+            get { return _calculator; }
+        }
     }
 
     /// <summary>
@@ -68,6 +101,204 @@ namespace MyTestProject
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class MyTestProjectRepositoryFolders
     {
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e2c284dc-6b05-496b-8c25-cce6c2a2d84d")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _startInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "e2c284dc-6b05-496b-8c25-cce6c2a2d84d", "")
+            {
+                _startInfo = new RepoItemInfo(this, "Start", "?/?/button[@accessiblename='Start']", 30000, null, "a4f4839d-092a-4995-a900-14214bf513d9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e2c284dc-6b05-496b-8c25-cce6c2a2d84d")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e2c284dc-6b05-496b-8c25-cce6c2a2d84d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Start item.
+            /// </summary>
+            [RepositoryItem("a4f4839d-092a-4995-a900-14214bf513d9")]
+            public virtual Ranorex.Button Start
+            {
+                get
+                {
+                    return _startInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Start item info.
+            /// </summary>
+            [RepositoryItemInfo("a4f4839d-092a-4995-a900-14214bf513d9")]
+            public virtual RepoItemInfo StartInfo
+            {
+                get
+                {
+                    return _startInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The StartAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("3b8a154e-dc52-409b-99fd-1f6674331d2a")]
+        public partial class StartAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _pmicrosoftwindowscalculator8wekyb3d8bInfo;
+
+            /// <summary>
+            /// Creates a new Start  folder.
+            /// </summary>
+            public StartAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Start", "/winapp[@appid='App' and @name='Start']", parentFolder, 30000, null, true, "3b8a154e-dc52-409b-99fd-1f6674331d2a", "")
+            {
+                _pmicrosoftwindowscalculator8wekyb3d8bInfo = new RepoItemInfo(this, "PMicrosoftWindowsCalculator8wekyb3d8b", ".//list[@automationid='AppsList']/container[@name='C']/listitem[@automationid='P~Microsoft.WindowsCalculator_8wekyb3d8bbwe!App']", 30000, null, "ac5c6681-4cfd-45d4-8579-c93b21c51455");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3b8a154e-dc52-409b-99fd-1f6674331d2a")]
+            public virtual Ranorex.WindowsApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WindowsApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3b8a154e-dc52-409b-99fd-1f6674331d2a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PMicrosoftWindowsCalculator8wekyb3d8b item.
+            /// </summary>
+            [RepositoryItem("ac5c6681-4cfd-45d4-8579-c93b21c51455")]
+            public virtual Ranorex.ListItem PMicrosoftWindowsCalculator8wekyb3d8b
+            {
+                get
+                {
+                    return _pmicrosoftwindowscalculator8wekyb3d8bInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PMicrosoftWindowsCalculator8wekyb3d8b item info.
+            /// </summary>
+            [RepositoryItemInfo("ac5c6681-4cfd-45d4-8579-c93b21c51455")]
+            public virtual RepoItemInfo PMicrosoftWindowsCalculator8wekyb3d8bInfo
+            {
+                get
+                {
+                    return _pmicrosoftwindowscalculator8wekyb3d8bInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CalculatorAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("47b5787b-bcf4-41a7-b189-063a0c84f939")]
+        public partial class CalculatorAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new Calculator  folder.
+            /// </summary>
+            public CalculatorAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Calculator", "/winapp[@packagename='Microsoft.WindowsCalculator']", parentFolder, 30000, null, true, "47b5787b-bcf4-41a7-b189-063a0c84f939", "")
+            {
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@automationid='Close']", 30000, null, "fcbad684-6661-4453-b399-f0e6427eae55");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("47b5787b-bcf4-41a7-b189-063a0c84f939")]
+            public virtual Ranorex.WindowsApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WindowsApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("47b5787b-bcf4-41a7-b189-063a0c84f939")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("fcbad684-6661-4453-b399-f0e6427eae55")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("fcbad684-6661-4453-b399-f0e6427eae55")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
